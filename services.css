@@ -1,0 +1,218 @@
+body{
+  background-image: url(./bg-01.jpg);
+  background-size: cover;
+}
+
+
+.parent{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.child-2{
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  height: 120px;
+  background-color: Rgba(255, 255, 255, 0.7);
+  margin: 110px 20px 20px 40px ;
+  align-items: center;
+  list-style: none;
+}
+
+.icon{
+       display: flex;
+
+}
+.text1{
+  font-size: 2.3rem;
+  /*font-family: Arial; */
+  color: #333333;
+  padding-left: 160px;
+  padding-top: 20px;
+  margin: 0;
+}
+.text2{
+   color: grey;
+    font-size: 1.3rem;
+   padding-left: 100px;
+}
+.child-1{
+  
+  width: 400px;
+  height: 200px;
+  background-color: Rgba(255, 255, 255, 0.7);;
+  margin-top: 70px;
+  margin-left: 100px;  
+ 
+}
+.child-2 a{
+         text-decoration: none;
+        color: #6b6b6b;
+        font-size: 1.2rem;
+}
+
+/*.fas {
+          padding-bottom: 60px;
+          padding-left: 40px;
+          padding-top: 40px;
+} */
+.input-checkbox-toggler{
+  display: none;
+}
+.ham-icon{
+  display: none;
+}
+
+section {
+  margin-top: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.parallax-2 {
+  background-image: url('coffee-glass.jpg');
+  height: 400px;
+}
+
+.des{
+      margin-top: 60px;
+      background-color:rgba(15, 29, 32, 0.76);
+      padding-top: 40px;
+      width: 1350px;
+      height: 270px;
+      
+}
+h2{
+    color:white;
+    font-size: 3rem;
+
+}
+.p3{
+   color: white;
+
+}
+
+.description{
+    
+  background-color:rgba(15, 29, 32, 0.76);
+  width: 1250px;
+  height: 450px;
+  margin-top: 50px;
+  margin-left: 80px;
+
+}
+
+.p2{
+      padding-top: 100px;
+      padding-left: 60px;
+      color: white;
+      line-height: normal;
+      font-size: 1.5rem;
+
+}
+.p3{
+  padding-left: 60px;
+  color: white;
+  line-height: normal;
+  font-size: 1.5rem;
+  padding-top: 40px;
+
+}
+
+footer {
+
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  
+
+  .parallax {
+      background-attachment: scroll;
+      /* Disable parallax effect for better performance */
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:400px){
+  *{
+      box-sizing: border-box;
+  }
+  .parent{
+      display: flex;
+      position: relative;
+      padding: 10px;
+  }
+  .child-2{
+      position: absolute;
+      display: none;
+      gap: 10px;
+      align-items: center;
+      top: 110px;
+      left: 65%;
+      color: white;
+      width: 20%;
+      background-color: #444;
+  }
+  .ham-icon{
+      display: block;
+  }
+.input-checkbox-toggler:checked + .child-2{
+   display:flex;
+   flex-direction: column;
+}   
+}
+
+@media screen and (min-width:401px) and (max-width:768px){
+  .parent{
+      display: flex;
+      position: relative;
+      padding: 10px;
+  }
+  .child-2{
+      position: absolute;
+      display: none;
+      gap: 10px;
+      align-items: center;
+      top: 110px;
+      left: 65%;
+      color: white;
+      width: 20%;
+      background-color: #444;
+  }
+  .ham-icon{
+      display: block;
+  }
+  .ham-icon:hover{
+      cursor: pointer;
+  }
+.input-checkbox-toggler:checked + .child-2{
+  
+   display:flex;
+   flex-direction: column;
+} 
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+  .parent{
+      padding: 10px;
+      justify-content: space-between;
+      gap: 50px;
+  }
+  .child-2
+  {
+      align-items: center;
+      justify-content: flex-end;
+  }
+}

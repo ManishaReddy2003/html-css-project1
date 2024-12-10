@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./bg-01.jpg);
+    background-size: cover;
+}
+
+.heading{
+    /* flex: 1;*/
+     width: 400px;
+     height: 200px;
+     background-color: Rgba(255, 255, 255, 0.7);;
+     margin-top: 70px;
+     margin-left: 100px;  
+
+}
+
+.text1{
+   font-size: 2.3rem;
+   font-family: Arial; 
+   color: #333333;
+   padding-left: 160px;
+   padding-top: 20px;
+   margin: 0;
+}
+.text2{
+    color: grey;
+     font-size: 1.3rem;
+    padding-left: 100px;
+}
+
+header{
+     display: flex;
+     
+}
+/*.row{
+  flex: 2;
+}*/
+
+nav{
+display: flex;
+justify-content: space-around;
+width: 800px;
+height: 120px;
+background-color: Rgba(255, 255, 255, 0.7);
+margin: 110px 20px 20px 40px ;
+align-items: center;
+list-style: none;
+}
+
+
+a{
+  text-decoration: none;
+  color: #6b6b6b;
+  font-size: 1.2rem;
+
+} 
+
+/* hero secton  */
+.heroSection{
+    height: 50vh;
+    background-image: url(./people.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 86%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.testimonials{
+    height: 50%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.326);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.testimonials h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.testimonials p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* main section */
+main{
+    height: 80vh;
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10vh auto;
+}
+
+.form,.info{
+    width: 47%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+.form input{
+    height: 10%;
+    width: 70%;
+    color: black;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+}
+.form input:focus{
+    outline: 2px solid aqua;
+    transition: all 0.3s linear;
+}
+.form textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.form textarea::placeholder{
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 1rem;
+}
+.form textarea:focus{
+    outline: 2px solid aqua;
+    transition: all 0.5s linear;
+}
+.form input::placeholder{
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 1rem;
+}
+.form button{
+    height: 10%;
+    width: 20%;
+    border: none;
+    color: black;
+    align-self: flex-end;
+    margin-right: 15%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    text-align: center;
+    &:hover{
+        background-color: grey;
+        color: white;
+    }
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.logo{
+    border: 1px solid white;
+    height: 20%;
+    width: 22%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.details h3{
+    font-size: 2rem;
+}
+.details p{
+    font-size: 1.3rem;
+}
+
+/* email section */
+section{
+    height: 90vh;
+}
+.email{
+    width: 86%;
+    margin:  auto;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobilePic{
+    width: 33%;
+    height: 100%;
+    background-image: url(./call-to-action-3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.description{
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.description h1{
+    font-size: 2rem;
+    color: grey;
+}
+.description p{
+    font-size: 1.2rem;
+    color: grey;
+}
+.input,.description h1,.description p{
+    margin:  0 3rem;
+}
+.input input,button{
+    padding: 1.5rem;
+}
+.input input{
+    padding-right: 12rem;
+    color: black;
+}
+.input{
+    /* background-color: aqua; */
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.input button{
+    width:30%;
+    font-size: larger;
+    font-weight: 400;
+    color: black;
+    background-color: #0299CC;
+    border: none;
+}
+footer{
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 1.1rem;
+}

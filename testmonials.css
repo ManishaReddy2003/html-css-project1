@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./bg-01.jpg);
+    background-size: cover;
+}
+
+body{
+    background-image: url(./bg-01.jpg);
+    background-size: cover;
+  }
+  
+  
+  .parent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+  }
+  .child-2{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    height: 120px;
+    background-color: Rgba(255, 255, 255, 0.7);
+    margin: 110px 20px 20px 40px ;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .icon{
+         display: flex;
+        
+  }
+  .text1{
+    font-size: 2.3rem;
+    /*font-family: Arial; */
+    color: #333333;
+    padding-left: 160px;
+    padding-top: 20px;
+    margin: 0;
+  }
+  .text2{
+     color: grey;
+      font-size: 1.3rem;
+     padding-left: 100px;
+  }
+  .child-1{
+    
+    width: 400px;
+    height: 200px;
+    background-color: Rgba(255, 255, 255, 0.7);;
+    margin-top: 70px;
+    margin-left: 100px;  
+   
+  }
+  .child-2 a{
+           text-decoration: none;
+          color: #6b6b6b;
+          font-size: 1.2rem;
+  }
+  
+  /*.fas {
+            padding-bottom: 60px;
+            padding-left: 40px;
+            padding-top: 40px;
+  } */
+  .input-checkbox-toggler{
+    display: none;
+  }
+  .ham-icon{
+    display: none;
+  }
+  
+  @media screen and (max-width:400px){
+    *{
+        box-sizing: border-box;
+    }
+    .parent{
+        display: flex;
+        position: relative;
+        padding: 10px;
+    }
+    .child-2{
+        position: absolute;
+        display: none;
+        gap: 10px;
+        align-items: center;
+        top: 110px;
+        left: 65%;
+        color: white;
+        width: 20%;
+        background-color: #444;
+    }
+    .ham-icon{
+        display: block;
+    }
+  .input-checkbox-toggler:checked + .child-2{
+     display:flex;
+     flex-direction: column;
+  }   
+  }
+  
+  @media screen and (min-width:401px) and (max-width:768px){
+    .parent{
+        display: flex;
+        position: relative;
+        padding: 10px;
+    }
+    .child-2{
+        position: absolute;
+        display: none;
+        gap: 10px;
+        align-items: center;
+        top: 110px;
+        left: 65%;
+        color: white;
+        width: 20%;
+        background-color: #444;
+    }
+    .ham-icon{
+        display: block;
+    }
+    .ham-icon:hover{
+        cursor: pointer;
+    }
+  .input-checkbox-toggler:checked + .child-2{
+    
+     display:flex;
+     flex-direction: column;
+  } 
+  }
+  
+  @media screen and (min-width:769px) and (max-width:1024px) {
+    .parent{
+        padding: 10px;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .child-2
+    {
+        align-items: center;
+        justify-content: flex-end;
+    }
+  }
+
+/* hero secton  */
+.heroSection{
+    margin-top: 30px;
+    height: 50vh;
+    background-image: url(./ice-mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 86%;
+    margin-left: 110px;
+    display: flex;
+    align-items: center;
+}
+.testimonials{
+    height: 50%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.326);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.testimonials h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.testimonials p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* carousel */
+.container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 10vh;
+}
+.wrapper{
+    height: 80%;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.image-holder{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(6, 33%);
+}
+.imageBox{
+    height: 100%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+}
+.details{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.details h3{
+    font-size: 2rem;
+    text-align: center;
+}
+.details p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.container input{
+    display: none;
+}
+
+.target{
+    height: 10%;
+    width: 8%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.target label{
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#img1:checked~.wrapper .image-holder {
+    transform: translateX(0);
+    transition: all 1s ease;
+}
+
+#img2:checked~.wrapper .image-holder {
+    transform: translateX(-33%);
+    transition: all 1s ease;
+}
+
+#img3:checked~.wrapper .image-holder {
+    transform: translateX(-66%);
+    transition: all 1s ease;
+}
+
+
+/* email section */
+
+section{
+    height: 90vh;
+}
+.email{
+    width: 86%;
+    margin:  auto;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobilePic{
+    width: 33%;
+    height: 100%;
+    background-image: url(./call-to-action-2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.description{
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.description h1{
+    font-size: 2rem;
+    color: grey;
+}
+.description p{
+    font-size: 1.2rem;
+    color: grey;
+}
+.input,.description h1,.description p{
+    margin:  0 3rem;
+}
+.input input,button{
+    padding: 1.5rem;
+}
+.input input{
+    padding-right: 12rem;
+    color: black;
+}
+.input{
+    /* background-color: aqua; */
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.input button{
+    width:30%;
+    font-size: larger;
+    font-weight: 400;
+    color: black;
+    background-color: #0299CC;
+    border: none;
+}
+footer{
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 1.1rem;
+}

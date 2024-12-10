@@ -1,0 +1,188 @@
+body{
+    background-image: url(https://templatemo.com/templates/templatemo_534_parallo/img/bg-01.jpg);
+    background-size: 100% 100%;
+    background-attachment:scroll ;
+}
+body{
+    background-size: cover;
+  }
+
+.heading{
+      /* flex: 1;*/
+       width: 400px;
+       height: 200px;
+       background-color: Rgba(255, 255, 255, 0.7);;
+       margin-top: 70px;
+       margin-left: 100px;  
+
+}
+
+.text1{
+     font-size: 2.3rem;
+     /*font-family: Arial; */
+     color: #333333;
+     padding-left: 160px;
+     padding-top: 20px;
+     margin: 0;
+}
+.text2{
+      color: grey;
+       font-size: 1.3rem;
+      padding-left: 100px;
+}
+
+header{
+       display: flex;
+       
+}
+/*.row{
+    flex: 2;
+}*/
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  height: 120px;
+  background-color: Rgba(255, 255, 255, 0.7);
+  margin: 110px 20px 20px 40px ;
+  align-items: center;
+  list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: #6b6b6b;
+    font-size: 1.2rem;
+
+}
+.heading1{
+    text-align: center;
+    padding-top: 40px;
+    color:rgba(0, 0, 0, 0.688);
+}
+.rule{
+    width: 300px;
+    text-align: center;
+    color:rgba(0, 0, 0, 0.688) ;
+
+    border: 1px solid rgba(0, 0, 0, 0.845);
+}
+.about{
+    color: rgb(55, 173, 173);
+}
+.title1{
+    padding:40px 10px;
+}
+.parent1{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 30px;
+    gap: 10px;
+}
+.p1card{
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    height: fit-content;
+}
+.p1card p{
+    font-size: 1.5rem;
+}
+.box{
+    font-size: 3rem;
+    padding: 10px;
+    border: 2px solid white;
+    display: inline-block;
+}
+.p1card button{
+ background-color: rgb(9, 109, 109);
+ padding: 15px;
+ width: 160px;
+ color: white;
+ border: 0px;
+font-size: 1.5rem;
+}
+.p1card button:hover{
+    background-color: rgb(29, 215, 215);
+}
+.parent2{
+padding: 10px;
+display: flex;
+justify-content: center;
+}
+.p2content{
+text-align: center;
+color: white;
+width: 500px;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.6) ;
+padding: 10px;
+}
+.p2content p{
+font-size: 1.2rem;
+}
+.parent3{
+display: flex;
+flex-wrap: wrap; 
+justify-content: space-around;
+gap: 20px;
+padding-bottom: 40px;
+margin: 10px 30px;
+}
+.p3card{
+width :40%;
+color: white;
+display: flex;
+gap: 20px;
+align-items: center;
+background-color: rgba(255, 255, 255, 0.718);
+color: rgba(52, 50, 50, 0.878);
+font-size: 1.2rem;
+padding: 20px;
+}
+.p3icon{
+    border: 1px solid rgba(26, 23, 23, 0.878);
+    border-radius: 100%;
+    padding: 13px;
+}
+.footer p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+@media  screen and (max-width:400px){
+    .parent1{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1rem;
+    }
+    .parent3{
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    .p3card{
+        width: auto;
+    }
+}
+@media screen and (min-width:401px) and (max-width:760px){
+    .parent1{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .p3card{
+        width: auto;
+    }
+}
